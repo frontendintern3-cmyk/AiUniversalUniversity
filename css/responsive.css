@@ -282,33 +282,21 @@
 
 
 @media (max-width: 767px) {
-
-
-
   .why-ai {
-
-    padding-top: 60px;
-
-    padding-bottom: 70px;
-
+    padding-top: 20px;
+    padding-bottom: 7px;
   }
 
   .why-ai-heading {
-
     margin-bottom: 40px;
-
   }
 
   .why-ai-heading h2 {
-
     font-size: 24px;
-
     line-height: 32px;
-
   }
 
   /* TOP STATS */
-
 
 
   .why-top-wrapper {
@@ -414,13 +402,13 @@
 @media (max-width: 1024px) {
 
   .Applicaation {
-    padding: 50px 16px;
+    padding: 20px 16px;
   }
 
   .Applicaation h2 {
     font-size: 34px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   /* MAKE COLUMN */
@@ -456,12 +444,12 @@
 @media (max-width: 767px) {
 
   .Applicaation {
-    padding: 40px 15px;
+    padding: 10px 15px;
   }
 
   .Applicaation h2 {
     font-size: 28px;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
   }
 
 
@@ -639,17 +627,9 @@
 
 @media (max-width: 767px) {
 
-  .experience-future {
-
-    padding-top: 50px;
-
-    padding-bottom: 50px;
-
-  }
-
   .experience-future-heading {
 
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 
     padding: 0 15px;
 
@@ -705,13 +685,13 @@
 }
 
 @media (max-width: 767px) {
-  .Programhighlight {
-    padding: 60px 15px;
-  }
+  /* .Programhighlight {
+    padding: 15px 15px;
+  } */
 
   .program-highlight-content h1 {
-    font-size: 28px;
-    margin-bottom: 30px;
+    font-size: 25px;
+    margin-bottom: 25px;
   }
 
   .programstats {
@@ -719,12 +699,12 @@
   }
 
   .programstatscard {
-    width: 140px;
+    width: 150px;
     height: 120px;
   }
 
   .programstatscardnumber {
-    font-size: 32px;
+    font-size: 20px;
   }
 
   .programstatscard h5 {
@@ -790,7 +770,7 @@
 @media (max-width: 767px) {
 
   .CampusInfrastructure {
-    padding: 40px 15px;
+    padding: 0px 15px;
   }
 
   .CampusInfrastructure h2 {
@@ -832,7 +812,7 @@
 /* Meet Our Mascot */
 @media (max-width: 767px) {
   .MeetOurMascot {
-    padding: 40px 15px;
+    padding: 30px 15px;
   }
 
   .MeetOurMascot h2 {
@@ -856,12 +836,12 @@
 /* Top Recruiters */
 @media (max-width: 767px) {
   .Toprecuiter {
-    padding: 50px 15px;
+    padding: 20px 15px;
   }
 
   .Toprecuiter h2 {
     font-size: 28px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .Toprecuiterbothimg {
@@ -915,12 +895,12 @@
 
 @media (max-width: 767px) {
   .about-section {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 20px;
+    padding-bottom: 5px;
   }
 
   .about-heading {
-    margin-bottom: 45px;
+    margin-bottom: 25px;
   }
 
   .about-heading h2 {
@@ -954,8 +934,8 @@
   }
 
   .about-card h3 {
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 13px;
+    line-height: 20px;
   }
 
   .about-card span {
