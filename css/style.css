@@ -29,11 +29,13 @@ a {
   text-decoration: none;
 
 }
+
 ul {
 
   list-style: none;
 
 }
+
 .container {
 
   width: 100%;
@@ -727,7 +729,7 @@ ul {
 
 .Applicaation {
   width: 100%;
-  padding: 40px 0 88px;
+  padding: 40px 0 50px;
   background: white;
 }
 

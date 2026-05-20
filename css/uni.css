@@ -1,27 +1,37 @@
-/* =========================
+/* =====================================================
    UNIVERSAL AQI SECTION
+===================================================== */
+
+/* =========================
+   BASE / MOBILE FIRST
 ========================= */
 
 .universalaqi {
   width: 100%;
   overflow: hidden;
-  background: #fff;
+  position: relative;
+  background: #ffffff;
 }
 
 .universalimage {
   width: 100%;
-  line-height: 0;
   position: relative;
+  line-height: 0;
 }
 
 /* =========================
-   IMAGE COMMON STYLE
+   IMAGE WRAPPERS
 ========================= */
 
 .universallaptopimage,
 .universalmobileimage {
   width: 100%;
+  position: relative;
 }
+
+/* =========================
+   COMMON IMAGE STYLE
+========================= */
 
 .universallaptopimage img,
 .universalmobileimage img {
@@ -29,41 +39,78 @@
   height: auto;
   display: block;
   object-fit: cover;
+  object-position: center;
 }
 
 /* =========================
-   DEFAULT (DESKTOP/LAPTOP)
+   DEFAULT MOBILE VIEW
 ========================= */
 
-.universallaptopimage {
+/* Mobile image visible by default */
+.universalmobileimage {
   display: block;
 }
 
-.universalmobileimage {
+/* Laptop/Desktop image hidden on mobile */
+.universallaptopimage {
   display: none;
 }
 
-
 /* =========================
-   TABLET + MOBILE
+   SMALL MOBILE DEVICES
+   iPhone SE / Fold Phones
 ========================= */
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
 
-  /* Hide laptop image */
-  .universallaptopimage {
-    display: none;
-  }
-
-  /* Show mobile image */
-  .universalmobileimage {
-    display: block;
+  .universalaqi {
     width: 100%;
   }
 
   .universalmobileimage img {
     width: 100%;
     height: auto;
+    object-fit: cover;
+  }
+}
+
+/* =========================
+   TABLET DEVICES
+   iPads / Landscape Phones
+========================= */
+
+@media (min-width: 768px) {
+
+  /* Show laptop/tablet image */
+  .universallaptopimage {
     display: block;
+  }
+
+  /* Hide mobile image */
+  .universalmobileimage {
+    display: none;
+  }
+
+  .universallaptopimage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/* =========================
+   LARGE DESKTOPS
+========================= */
+
+@media (min-width: 1440px) {
+
+  .universalaqi {
+    width: 100%;
+  }
+
+  .universallaptopimage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
