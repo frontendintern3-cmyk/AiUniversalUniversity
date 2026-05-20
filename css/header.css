@@ -8,7 +8,7 @@
 }
 
 .header-wrapper {
-  height: 66px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,7 +43,7 @@
   display: block;
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 100%;
   color: #0E4B9F;
   transition: 0.3s ease;
