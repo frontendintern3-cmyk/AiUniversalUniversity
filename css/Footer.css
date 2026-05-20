@@ -226,6 +226,18 @@ main {
   gap: 20px;
   padding: 24px;
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(110%);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+}
+
+.fixed-footer-bar.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 /* ================= FIXED LEFT ================= */

@@ -3,19 +3,34 @@ const mobileMenu = document.getElementById("mobileMenu");
 const menuIcon = document.getElementById("menuIcon");
 
 menuBtn.addEventListener("click", () => {
-  if (mobileMenu.style.display === "block") {
-    mobileMenu.style.display = "none";
+  mobileMenu.classList.toggle("active");
+  menuIcon.classList.toggle("fa-bars");
+  menuIcon.classList.toggle("fa-xmark");
+});
+
+mobileMenu.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
     menuIcon.classList.remove("fa-xmark");
     menuIcon.classList.add("fa-bars");
-  } else {
-    mobileMenu.style.display = "block";
-    menuIcon.classList.remove("fa-bars");
-    menuIcon.classList.add("fa-xmark");
-  }
+  });
 });
+
 const playBtn = document.getElementById("playBtn");
 const thumbnail = document.querySelector(".video-thumbnail");
 const iframe = document.getElementById("youtubeVideo");
+const fixedFooterBar = document.querySelector(".fixed-footer-bar");
+
+function updateFixedFooterBar() {
+  if (!fixedFooterBar) {
+    return;
+  }
+
+  fixedFooterBar.classList.toggle("is-visible", window.scrollY > 40);
+}
+
+window.addEventListener("scroll", updateFixedFooterBar, { passive: true });
+updateFixedFooterBar();
 
 playBtn.addEventListener("click", playVideo);
 thumbnail.addEventListener("click", playVideo);
