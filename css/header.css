@@ -1,0 +1,93 @@
+.header {
+  width: 100%;
+  background: #ffffff;
+  /* border-bottom: 1px solid #e9e9e9; */
+}
+
+.header-wrapper {
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+/* ================= LOGO ================= */
+
+.logo img {
+  padding-top: 4px;
+  display: block;
+  width: 208px;
+  height: 66px;
+  object-fit: contain;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  margin-left: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 44px;
+}
+
+.nav-links li a {
+  display: block;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: #0E4B9F;
+  transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+  opacity: 0.8;
+}
+
+/* ================= MENU BUTTON ================= */
+
+.menu-btn {
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  background: transparent;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  color: #0E4B9F;
+  font-size: 28px;
+}
+
+/* ================= MOBILE MENU ================= */
+
+.mobile-menu {
+  width: 100%;
+  background: #ffffff;
+
+  display: none;
+
+  padding: 20px 30px;
+  border-top: 1px solid #eeeeee;
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-menu ul li a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0E4B9F;
+}

@@ -1,0 +1,990 @@
+@media (max-width: 1024px) {
+
+  .header-wrapper {
+
+    padding-left: 20px;
+
+    padding-right: 20px;
+
+
+
+
+    text-align: center;
+    font-size: 38px;
+
+    line-height: 48px;
+    text-align: center;
+    width: 100%;
+
+    max-width: 434px;
+    height: auto;
+    min-height: 116px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    margin-top: 25px;
+    position: relative;
+
+    right: auto;
+    top: auto;
+    width: 90%;
+    max-width: 412px;
+    height: 350px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .ritherow-card::after {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .bottomcontent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 15px 20px;
+  }
+
+  .bottomcontent p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .lefthero-card h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .leftimgcard {
+    max-width: 320px;
+  }
+
+  .cardimg {
+    width: 90px;
+    height: 60px;
+  }
+
+  .ritherow-card {
+    height: 280px;
+  }
+
+  .ritherow-card::after {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.mobile-menu.active {
+
+  display: block;
+}
+
+.why-overlay-card {
+
+  @media (max-width: 1024px) {
+
+    .about-grid {
+
+      grid-template-columns: 1fr;
+
+      row-gap: 20px;
+
+    }
+
+  }
+
+  /* ================= MOBILE ================= */
+
+
+
+  @media (max-width: 767px) {
+
+
+
+    .about-section {
+
+      padding-top: 70px;
+
+      padding-bottom: 70px;
+
+    }
+
+    .about-heading {
+
+      margin-bottom: 45px;
+
+    }
+
+    .about-heading h2 {
+
+      width: 100%;
+
+
+
+      font-size: 28px;
+
+      line-height: 38px;
+
+
+
+      padding-left: 15px;
+
+      padding-right: 15px;
+
+    }
+
+    .about-heading p {
+
+      font-size: 18px;
+
+      line-height: 30px;
+
+
+
+      padding-left: 20px;
+
+      padding-right: 20px;
+
+    }
+
+    .about-card {
+
+      height: auto;
+
+      min-height: 163px;
+
+      padding-top: 25px;
+
+      padding-bottom: 25px;
+
+    }
+
+    .about-card h3 {
+
+      font-size: 22px;
+
+      line-height: 30px;
+
+    }
+
+  }
+
+  /* whyresponsive css */
+
+  /* ================= TABLET ================= */
+
+
+
+  @media (max-width: 1200px) {
+
+
+
+    .why-top-wrapper {
+
+      flex-wrap: wrap;
+
+      /* allows cards to drop if screen is narrow */
+
+    }
+
+    .why-overlay-cards {
+
+      position: relative;
+
+      top: auto;
+
+      left: auto;
+
+      transform: none;
+
+      display: grid;
+
+
+
+      grid-template-columns: repeat(2, 1fr);
+
+
+
+      justify-items: center;
+
+
+
+      padding: 30px;
+
+      gap: 20px;
+
+    }
+
+    .why-bottom-section {
+
+      height: auto;
+
+    }
+
+    .why-background-image {
+
+      position: absolute;
+
+      inset: 0;
+
+    }
+
+    .why-bottom-section {
+
+      padding-top: 40px;
+
+      padding-bottom: 40px;
+
+    }
+
+  }
+
+  /* ================= MOBILE ================= */
+
+
+
+  @media (max-width: 767px) {
+
+
+
+    .why-ai {
+
+      padding-top: 60px;
+
+      padding-bottom: 70px;
+
+    }
+
+    .why-ai-heading {
+
+      margin-bottom: 40px;
+
+    }
+
+    .why-ai-heading h2 {
+
+      font-size: 24px;
+
+      line-height: 32px;
+
+    }
+
+    /* TOP STATS */
+
+
+
+    .why-top-wrapper {
+
+      flex-direction: column;
+
+      align-items: center;
+
+      overflow-x: visible;
+
+      padding-left: 15px;
+
+      padding-right: 15px;
+
+      gap: 30px;
+
+      margin-bottom: 40px;
+
+    }
+
+    .why-top-wrapper::-webkit-scrollbar {
+
+      display: none;
+
+    }
+
+    .why-top-card {
+
+      min-width: unset;
+
+      width: 262px;
+
+    }
+
+    .why-top-content {
+
+      width: 262px;
+
+    }
+
+
+
+
+    .why-overlay-card {
+
+      width: 100%;
+
+      height: auto;
+
+
+
+      min-height: 230px;
+
+
+
+      padding: 20px 15px;
+
+    }
+
+    .why-overlay-card img {
+
+      width: 90px;
+
+      height: 90px;
+
+    }
+
+    .overlay-stat-big {
+
+      font-size: 50px;
+
+      line-height: 58px;
+
+    }
+
+    .why-overlay-card p {
+
+      font-size: 16px;
+
+      line-height: 24px;
+
+    }
+
+    .why-overlay-card h3 {
+
+      font-size: 20px;
+
+      line-height: 28px;
+
+    }
+
+    /* ================= application process TABLET ================= */
+
+
+
+    @media (max-width: 1100px) {
+
+
+
+      .application-wrapper {
+
+        flex-direction: column;
+
+
+
+        gap: 50px;
+
+      }
+
+    }
+
+    /* ================= MOBILE ================= */
+
+
+
+    @media (max-width: 767px) {
+
+
+
+      .application-process {
+
+        padding-top: 70px;
+
+        padding-bottom: 70px;
+
+      }
+
+      /* IMAGE TOP */
+
+
+
+      .application-wrapper {
+
+        flex-direction: column-reverse;
+
+
+
+        gap: 40px;
+
+      }
+
+      .application-right img {
+
+        width: 100%;
+
+      }
+
+      .application-left {
+
+        width: 100%;
+
+
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+
+      }
+
+      /* TITLE */
+
+
+
+      .application-title {
+
+        margin-bottom: 40px;
+
+      }
+
+      .application-title h2 {
+
+        font-size: 28px;
+
+        line-height: 38px;
+
+      }
+
+      /* BUTTON */
+
+
+
+      .steps-follow {
+
+        width: 220px;
+
+        height: 50px;
+
+      }
+
+      .steps-follow h3 {
+
+        font-size: 18px;
+
+      }
+
+      /* TIMELINE */
+
+
+
+      .timeline-content {
+
+        width: 135px;
+
+      }
+
+      .timeline-content i {
+
+        font-size: 26px;
+
+      }
+
+      .timeline-content p {
+
+        font-size: 15px;
+
+        line-height: 22px;
+
+      }
+
+    }
+
+    /* ================= UNIVERSAL AQI MOBILE ================= */
+
+    @media (max-width: 1200px) {
+
+      .headeruniversal h3 {
+
+        font-size: 32px;
+
+      }
+
+      .sixcard {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        gap: 20px;
+
+      }
+
+      .universalaqi {
+
+        height: auto;
+
+        min-height: 645px;
+
+        padding: 40px 0;
+
+      }
+
+      .universalaqi-content {
+
+        height: auto;
+
+        min-height: 565px;
+
+        padding: 35px 25px 25px;
+
+      }
+
+      .down-left {
+
+        left: 25px;
+
+        bottom: 20px;
+
+      }
+
+      .down-left h3 {
+
+        font-size: 34px;
+
+      }
+
+    }
+
+    @media (max-width: 767px) {
+
+      .universalaqi-content {
+
+        padding: 25px 15px 20px;
+
+        min-height: 0;
+
+      }
+
+      .headeruniversal {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+      }
+
+      .headeruniversal h3 {
+
+        font-size: 24px;
+
+      }
+
+      .aqi-badge {
+
+        align-self: flex-start;
+
+        padding: 15px 30px;
+
+      }
+
+      .aqi-value {
+
+        font-size: 48px;
+
+      }
+
+      .sixcard {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 14px;
+
+      }
+
+      .sixcardstate {
+
+        width: 100%;
+
+        max-width: none;
+
+        height: 120px;
+
+      }
+
+      .sixcardstate h5 {
+
+        font-size: 18px;
+
+      }
+
+      .sixcardstate span {
+
+        font-size: 32px;
+
+      }
+
+      .down-left {
+
+        left: 15px;
+
+        bottom: 15px;
+
+      }
+
+      .down-left h3 {
+
+        font-size: 26px;
+
+      }
+
+      .down {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+
+      }
+
+      .down h3 {
+
+        font-size: 24px;
+
+      }
+
+    }
+
+
+
+    /* ================= EXPERIENCE FUTURE MOBILE ================= */
+
+    @media (max-width: 1300px) {
+
+      .experiencefutureytvideo {
+
+        width: 90%;
+
+        height: 450px;
+
+      }
+
+    }
+
+
+
+    @media (max-width: 767px) {
+
+      .experience-future {
+
+        padding-top: 50px;
+
+        padding-bottom: 50px;
+
+      }
+
+      .experience-future-heading {
+
+        margin-bottom: 30px;
+
+        padding: 0 15px;
+
+      }
+
+      .experience-future-heading h3 {
+
+        font-size: 24px;
+
+        line-height: 1.3;
+
+      }
+
+      .experiencefutureytvideo {
+
+        width: 100%;
+
+        max-width: 612px;
+
+        height: 279px;
+
+        border-radius: 20px;
+
+      }
+
+      .experiencefutureytvideo .play-btn {
+
+        width: 70px;
+
+        height: 50px;
+
+        border-radius: 12px;
+
+      }
+
+      .experiencefutureytvideo .play-btn i {
+
+        font-size: 20px;
+
+      }
+
+    }
+
+
+
+
+
+    /* Program Highlights */
+    @media (max-width: 1200px) {
+      .program-highlight-content h1 {
+        font-size: 32px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .Programhighlight {
+        padding: 60px 15px;
+      }
+
+      .program-highlight-content h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
+
+      .programstats {
+        gap: 15px;
+      }
+
+      .programstatscard {
+        width: 140px;
+        height: 120px;
+      }
+
+      .programstatscardnumber {
+        font-size: 32px;
+      }
+
+      .programstatscard h5 {
+        font-size: 14px;
+      }
+
+      /* Mobile overrides with exact sizes requested */
+      .Programhighlight .program-highlight-bg img {
+        position: absolute;
+        width: 1430px;
+        height: 740px;
+        top: 5503px;
+        left: -456px;
+        object-fit: cover;
+        filter: brightness(0.5);
+      }
+
+      .Programhighlight .programstatscard {
+        width: 160px;
+        height: 122px;
+        border-radius: 10px;
+        padding: 8px;
+      }
+
+      .Programhighlight .programstatscardnumber {
+        font-size: 40px;
+        line-height: 1;
+      }
+
+      .Programhighlight .programstatscard h5 {
+        font-size: 20px;
+        line-height: 1.1;
+      }
+    }
+
+
+
+
+    /* ================= CAMPUS INFRASTRUCTURE RESPONSIVENESS ================= */
+    @media (max-width: 1024px) {
+      .Applicaation {
+        padding: 60px 0 72px;
+      }
+
+      .Applicaation h2 {
+        font-size: 34px;
+        margin-bottom: 32px;
+      }
+
+      .applicationimage {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .leftimage {
+        width: min(100%, 532px);
+        height: auto;
+        aspect-ratio: 532 / 586;
+      }
+
+      .rightrimage {
+        width: min(100%, 700px);
+        height: auto;
+        aspect-ratio: 700 / 520;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .Applicaation {
+        padding: 44px 0 56px;
+      }
+
+      .Applicaation h2 {
+        font-size: 28px;
+        margin-bottom: 24px;
+      }
+
+      .applicationimage {
+        padding: 0 15px;
+        gap: 16px;
+      }
+
+      .leftimage,
+      .rightrimage {
+        width: 100%;
+        border-radius: 14px;
+      }
+
+      .leftimage {
+        aspect-ratio: 532 / 586;
+      }
+
+      .rightrimage {
+        aspect-ratio: 1378 / 808;
+      }
+
+      .rightrimage img {
+        object-position: 50% 28%;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .CampusInfrastructureimg {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        padding: 11px 15px;
+      }
+
+      .campusinfrastructureimgcard {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 395 / 232;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .CampusInfrastructure {
+        padding: 50px 15px;
+      }
+
+      .CampusInfrastructure h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
+
+      .CampusInfrastructureimg {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+        padding: 11px 0px;
+      }
+
+      .campusinfrastructureimgcard {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 395 / 232;
+        border-radius: 8px;
+      }
+
+      .campusinfrastructureimgcard .bottomcontent {
+        height: 38px;
+      }
+
+      .campusinfrastructureimgcard .bottomcontent p {
+        font-size: 13px;
+      }
+    }
+
+    /* Meet Our Mascot */
+    @media (max-width: 767px) {
+      .MeetOurMascot {
+        padding: 40px 15px;
+      }
+
+      .MeetOurMascot h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .MeetOurMascotimg {
+        width: 100%;
+        max-width: 616px;
+        height: 162px;
+      }
+
+      .MeetOurMascotimg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    /* Top Recruiters */
+    @media (max-width: 767px) {
+      .Toprecuiter {
+        padding: 50px 15px;
+      }
+
+      .Toprecuiter h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
+
+      .Toprecuiterbothimg {
+        gap: 30px;
+      }
+
+      .Toprecuiterbothimg img.recruiter-logos {
+        width: 100%;
+        max-width: 700px;
+        height: 153px;
+        object-fit: contain;
+      }
+
+      .Toprecuiterbothimg img.academic-building-img {
+        width: 100%;
+        max-width: 606px;
+        height: 236px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
+    }
+
+    /* ================== FOOTER RESPONSIVENESS ================== */
+    @media (max-width: 1200px) {
+      .Footer {
+        height: auto;
+      }
+
+      .Footer .backgroundimg {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: auto;
+        transform: none;
+      }
+
+      .Footer .backgroundimg img {
+        width: 100%;
+        height: auto;
+      }
+
+      .Toprecuiterbothimg img.recruiter-logos {
+        height: auto;
+      }
+
+      .Toprecuiterbothimg img.academic-building-img {
+        height: auto;
+      }
+    }
+  }
+}

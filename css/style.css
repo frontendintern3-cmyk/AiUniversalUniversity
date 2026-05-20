@@ -1,0 +1,1846 @@
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+
+body {
+
+  font-family: 'Nunito', sans-serif;
+
+  background: #ffffff;
+
+}
+
+
+
+a {
+
+  text-decoration: none;
+
+}
+
+
+
+ul {
+
+  list-style: none;
+
+}
+
+
+
+.container {
+
+  width: 100%;
+
+  max-width: 1366px;
+
+  margin: 0 auto;
+
+}
+
+
+
+
+/* ================= HERO SECTION ================= */
+.herosection {
+  width: 100%;
+  height: 530px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/herobanner.webp) !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.lefthero-card {
+  position: absolute;
+  left: 5%;
+  top: 160px;
+  z-index: 2;
+  width: 517px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lefthero-card h2 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 50px;
+  color: #FFFFFF;
+  margin: 0;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.leftimgcard {
+  width: 434px;
+  height: 116px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+}
+
+.cardimg {
+  width: 126px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardimg img.card-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.ritherow-card {
+  position: absolute;
+  right: 5%;
+  top: 45px;
+  width: 412px;
+  /* background: #0E4B9F; */
+  border-radius: 15px;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); */
+  /* border: 1px solid rgba(255, 255, 255, 0.2); */
+  letter-spacing: 0.5px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.ritherow-card::after {
+  /* content: 'Admissions Open 2026 - 2027'; */
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.bottomcontent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #0E4B9F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bottomcontent p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+.bottomcontent p a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+@media (min-width: 1440px) {
+  .lefthero-card {
+    left: calc(50% - 683px + 57px);
+  }
+
+  .ritherow-card {
+    right: calc(50% - 683px + 57px);
+  }
+}
+
+/* ================= ABOUT SECTION ================= */
+
+.about-section {
+
+  width: 100%;
+
+  background: #f3f3f3;
+
+  padding-top: 45px;
+
+  padding-bottom: 45px;
+
+}
+
+
+
+/* ================= HEADING ================= */
+
+.about-heading {
+
+  text-align: center;
+
+  margin-bottom: 70px;
+
+}
+
+
+
+.about-heading h2 {
+
+  width: 596px;
+
+  max-width: 100%;
+
+  margin: 0 auto 20px;
+
+  font-family: 'Nunito', sans-serif;
+
+  font-weight: 900;
+
+  font-size: 30px;
+
+  line-height: 100%;
+
+  letter-spacing: 0%;
+
+  color: #0E4B9F;
+
+}
+
+
+
+.about-heading p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #0E4B9F;
+
+}
+
+
+
+/* ================= ABOUT GRID ================= */
+
+.about-grid {
+
+  display: grid;
+
+
+  grid-template-columns: repeat(3, 1fr);
+
+  justify-content: center;
+
+  gap: 40px;
+
+  padding: 0 50px;
+
+}
+
+
+
+/* ================= CARD ================= */
+
+.about-card {
+
+  width: 100%;
+
+  max-width: 391px;
+
+  height: 163px;
+
+  margin: 0 auto;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding-left: 50px;
+
+  padding-right: 50px;
+
+}
+
+
+
+/* BLUE CARD */
+
+.blue-card {
+
+  background: #0E4B9F;
+
+}
+
+
+
+/* GREEN CARD */
+
+.green-card {
+
+  background: #689519;
+
+}
+
+
+
+/* ================= CARD TITLE ================= */
+
+.about-card h3 {
+
+  font-family: 'Nunito', sans-serif;
+
+  font-weight: 900;
+
+  font-size: 25px;
+
+  line-height: 27px;
+
+  letter-spacing: 0%;
+
+  text-align: center;
+
+  color: #ffffff;
+
+}
+
+
+
+/* ================= SMALL TEXT ================= */
+
+.about-card span {
+
+  margin-top: 8px;
+
+  font-family: 'Nunito', sans-serif;
+
+  font-weight: 500;
+
+  font-size: 14px;
+
+  line-height: 10px;
+
+  color: #ffffff;
+
+}
+
+
+
+/* why css */
+
+/* ================= WHY AI SECTION ================= */
+
+.why-ai {
+
+  width: 100%;
+
+  padding-top: 20px;
+
+  padding-bottom: 100px;
+
+  background: #f3f3f3;
+
+}
+
+
+
+/* ================= HEADING ================= */
+
+.why-ai-heading {
+
+  text-align: center;
+
+  margin-bottom: 55px;
+
+}
+
+
+
+.why-ai-heading h2 {
+
+  font-family: 'Nunito', sans-serif;
+
+  font-weight: 900;
+
+  font-size: 40px;
+
+  line-height: 100%;
+
+  color: #0E4B9F;
+
+}
+
+
+
+/* ================= TOP STATS ================= */
+
+.why-top-wrapper {
+
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: 0 auto 60px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  /* Add this so it doesn't squish elements tightly */
+
+  gap: 30px;
+
+}
+
+
+
+/* CARD */
+
+.why-top-card {
+
+  width: 262px;
+
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+
+
+/* GREEN BOX */
+
+.why-top-stat {
+
+  width: 212px;
+
+  height: 180px;
+
+  background: #689519;
+
+  border-radius: 10px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  position: relative;
+
+  z-index: 2;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.why-top-stat span {
+
+  font-family: 'Nunito', sans-serif;
+
+  font-weight: 900;
+
+  font-size: 32px;
+
+  line-height: 40px;
+
+  text-align: center;
+
+  color: #ffffff;
+
+}
+
+
+
+/* CONTENT BOX */
+
+.why-top-content {
+  width: 262px;
+  height: 156px;
+  background: #dcdada;
+  border-radius: 10px;
+  margin-top: -61px;
+  /* To push it under the green box from top: 61px */
+  padding-top: 75px;
+  /* space text below the green box */
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+
+
+.why-top-content p {
+
+  font-family: 'Nunito', sans-serif;
+
+  font-weight: 500;
+
+  font-size: 14px;
+
+  line-height: 20px;
+
+  color: #222222;
+
+}
+
+
+
+.why-top-content h4 {
+
+  margin-top: 10px;
+
+  font-family: 'Nunito', sans-serif;
+
+  font-weight: 700;
+
+  font-size: 13px;
+
+  font-style: italic;
+
+  color: #0E4B9F;
+
+}
+
+
+
+/* ================= BOTTOM IMAGE SECTION ================= */
+
+.why-bottom-section {
+
+  width: 1360px;
+
+  max-width: 90%;
+
+  height: 419px;
+
+  position: relative;
+
+  margin: 0 auto;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+}
+
+
+
+/* BACKGROUND IMAGE */
+
+.why-background-image {
+  /* padding: 0px; */
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+}
+
+
+
+/* OVERLAY CARDS */
+
+.why-overlay-cards {
+
+  width: 100%;
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+
+}
+
+
+
+/* CARD */
+
+.why-overlay-card {
+
+  width: 273px;
+
+  height: 290px;
+
+  border-radius: 20px;
+
+  background: linear-gradient(180deg,
+
+      rgba(255, 255, 255, 0.2) 0%,
+
+      #FFFFFF 30.69%);
+
+  backdrop-filter: blur(8px);
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 25px;
+
+}
+
+
+
+/* AI IMAGE */
+
+.why-overlay-card img {
+
+  width: 154px;
+
+  height: 154px;
+
+  object-fit: contain;
+
+  margin-bottom: 12px;
+
+}
+
+
+
+/* TITLE */
+
+.why-overlay-card h3 {
+
+  font-family: 'Nunito', sans-serif;
+
+  font-weight: 900;
+
+  font-size: 28px;
+
+  line-height: 34px;
+
+  color: #0E4B9F;
+
+}
+
+
+/* SMALL LABEL */
+
+.overlay-stat-small {
+
+  font-family: 'Nunito', sans-serif;
+
+  font-weight: 700;
+
+  font-size: 18px;
+
+  color: #0E4B9F;
+
+}
+
+
+
+/* BIG STAT */
+
+.overlay-stat-big {
+
+  font-family: 'Nunito', sans-serif;
+
+  font-weight: 900;
+
+  font-size: 64px;
+
+  line-height: 72px;
+
+  color: #0E4B9F;
+
+}
+
+
+
+/* PARAGRAPH */
+
+.why-overlay-card p {
+
+  margin-top: 12px;
+
+  font-family: 'Nunito', sans-serif;
+
+  font-weight: 800;
+
+  font-size: 20px;
+
+  line-height: 28px;
+
+  color: #0E4B9F;
+
+}
+
+
+
+
+/* application process */
+
+/* ================= APPLICATION PROCESS ================= */
+
+.Applicaation {
+  width: 100%;
+  padding: 72px 0 88px;
+  background: #f7f7f7;
+}
+
+.Applicaation h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #0f2b5f;
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.applicationimage {
+  width: min(100%, 1140px);
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.leftimage {
+  flex: 0 0 532px;
+  width: 532px;
+  height: 586px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(16, 39, 82, 0.14);
+}
+
+.leftimage img,
+.rightrimage img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rightrimage {
+  flex: 1 1 auto;
+  min-width: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(16, 39, 82, 0.14);
+}
+
+.rightrimage img {
+  height: 100%;
+}
+
+.application-process {
+
+  width: 100%;
+
+  padding-top: 90px;
+
+  padding-bottom: 100px;
+
+  background: #f3f3f3;
+
+}
+
+
+
+/* ================= TITLE ================= */
+
+.application-title {
+
+  text-align: center;
+
+  margin-bottom: 60px;
+
+}
+
+
+
+.application-title h2 {
+
+  font-family: 'Nunito', sans-serif;
+
+  font-weight: 900;
+
+  font-size: 40px;
+
+  line-height: 100%;
+
+  color: #0E4B9F;
+
+}
+
+
+
+/* ================= WRAPPER ================= */
+
+.application-wrapper {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 70px;
+
+}
+
+
+
+/* ================= LEFT SIDE ================= */
+
+.application-left {
+
+  width: 420px;
+
+}
+
+
+
+/* ================= STEPS BUTTON ================= */
+
+.steps-follow {
+
+  width: 245px;
+
+  height: 54px;
+
+  background: #001F63;
+
+  border-radius: 6px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin: 0 auto 35px;
+
+}
+
+
+
+.steps-follow h3 {
+
+  font-family: 'Nunito', sans-serif;
+
+  font-weight: 700;
+
+  font-size: 22px;
+
+  line-height: 100%;
+
+  color: #ffffff;
+
+}
+
+
+
+/* ================= TIMELINE ================= */
+
+.application-timeline {
+
+  width: 100%;
+
+  position: relative;
+
+  padding-bottom: 10px;
+
+}
+
+
+
+/* CENTER LINE */
+
+.application-timeline::before {
+
+  content: '';
+
+  width: 4px;
+
+  height: 100%;
+
+  background: #001F63;
+
+  position: absolute;
+
+  left: 50%;
+
+  top: 0;
+
+  transform: translateX(-50%);
+
+}
+
+
+
+/* STEP */
+
+.timeline-step {
+
+  position: relative;
+
+  margin-bottom: 48px;
+
+}
+
+
+
+/* DOT */
+
+.timeline-dot {
+
+  width: 18px;
+
+  height: 18px;
+
+  background: #001F63;
+
+  border-radius: 50%;
+
+  position: absolute;
+
+  left: 50%;
+
+  top: 12px;
+
+  transform: translateX(-50%);
+
+  z-index: 2;
+
+}
+
+
+
+/* CONTENT */
+
+.timeline-content {
+
+  width: 175px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+}
+
+
+
+/* RIGHT CONTENT */
+
+.right-step .timeline-content {
+
+  margin-left: auto;
+
+}
+
+
+
+/* LEFT CONTENT */
+
+.left-step .timeline-content {
+
+  text-align: right;
+
+}
+
+
+
+/* ICON */
+
+.timeline-content i {
+
+  font-size: 34px;
+
+  color: #4A4A4A;
+
+  flex-shrink: 0;
+
+}
+
+
+
+/* TEXT */
+
+.timeline-content p {
+
+  font-family: 'Nunito', sans-serif;
+
+  font-weight: 700;
+
+  font-size: 18px;
+
+  line-height: 24px;
+
+  color: #4A4A4A;
+
+}
+
+
+
+/* ================= RIGHT IMAGE ================= */
+
+.application-right img {
+
+  width: 650px;
+
+
+  max-width: 100%;
+
+  display: block;
+
+  border-radius: 20px;
+
+}
+
+
+
+/* ================= UNIVERSAL AQI SECTION ================= */
+
+.univer {
+
+  width: 100%;
+
+  position: relative;
+
+  margin-top: 50px;
+
+}
+
+
+
+.universalaqi {
+
+  position: relative;
+
+  width: 100%;
+
+  max-width: 1465px;
+
+  height: 645px;
+
+  margin: 0 auto;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+
+
+.universalaqibackimag {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  z-index: 1;
+
+}
+
+
+
+.universalaqibackimag img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+}
+
+/* dark gradient overlay to match design and improve contrast */
+.universalaqibackimag::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(3, 12, 48, 0.6) 100%);
+  z-index: 1;
+}
+
+
+
+.universalaqi-content {
+
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  height: 100%;
+
+  padding: 40px 40px 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+}
+
+
+
+.headeruniversal {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  width: 100%;
+
+}
+
+
+
+.headeruniversal h3 {
+
+  font-family: "Nunito", sans-serif;
+
+  font-size: 40px;
+
+  font-weight: 800;
+
+  color: #fff;
+
+  line-height: 1.2;
+
+}
+
+
+
+.aqi-badge {
+
+  background: linear-gradient(90deg, #6C9B2E 0%, #0E4B9F 100%);
+
+  border-radius: 50px;
+
+  padding: 20px 40px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-end;
+
+}
+
+
+
+.aqi-value {
+
+  font-family: "Nunito", sans-serif;
+
+  font-size: 64px;
+
+  font-weight: 900;
+
+  color: #fff;
+
+  line-height: 1;
+
+}
+
+
+
+.aqi-text {
+
+  font-family: "Nunito", sans-serif;
+
+  font-size: 20px;
+
+  color: #fff;
+
+  font-weight: 500;
+
+  margin-top: 5px;
+
+}
+
+
+
+.sixcard {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 42px;
+
+  width: 100%;
+
+  max-width: 1280px;
+
+  margin: 0 auto 10px;
+
+  padding: 0 20px;
+
+}
+
+
+
+.sixcardstate {
+
+  width: 180px;
+
+  height: 160px;
+
+  background: #FFFFFF;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 12px 10px;
+
+  box-shadow: 0 12px 30px rgba(2, 19, 64, 0.12);
+
+}
+
+.down-left {
+
+  position: absolute;
+
+  left: 40px;
+
+  bottom: 24px;
+
+  color: #fff;
+
+}
+
+.down-left h3 {
+
+  font-family: "Nunito", sans-serif;
+
+  font-size: 42px;
+
+  font-weight: 800;
+
+  margin: 0;
+
+}
+
+
+
+.sixcardstate h5 {
+
+  font-family: "Nunito", sans-serif;
+
+  font-size: 16px;
+
+  color: #222;
+
+  font-weight: 700;
+
+  margin-bottom: 6px;
+
+}
+
+
+
+.sixcardstate span {
+
+  font-family: "Nunito", sans-serif;
+
+  font-size: 40px;
+
+  font-weight: 900;
+
+  color: #E3000F;
+
+}
+
+
+
+.down {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  width: 100%;
+
+  color: #fff;
+
+}
+
+
+
+.down h3 {
+
+  font-family: "Nunito", sans-serif;
+
+  font-size: 32px;
+
+  font-weight: 800;
+
+}
+
+
+
+.down p {
+
+  font-family: "Nunito", sans-serif;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+}
+
+/* ================= EXPERIENCE FUTURE ================= */
+
+.experience-future {
+
+  width: 100%;
+
+  padding-top: 80px;
+
+  padding-bottom: 80px;
+
+}
+
+.experience-future-heading {
+
+  width: 100%;
+
+  max-width: 946px;
+
+  margin: 0 auto 50px;
+
+  text-align: center;
+
+}
+
+.experience-future-heading h3 {
+
+  font-family: "Nunito", sans-serif;
+
+  font-weight: 900;
+
+  font-size: 40px;
+
+  line-height: 1.2;
+  /* slightly relaxed from 100% for readability */
+
+}
+
+.experience-future-heading .green-title {
+
+  color: #6C9B2E;
+
+}
+
+.experience-future-heading .blue-title {
+
+  color: #0E4B9F;
+
+  margin-top: 10px;
+
+}
+
+.experiencefutureytvideo {
+
+  width: 100%;
+
+  max-width: 1278px;
+
+  height: 584px;
+
+  margin: 0 auto;
+
+  position: relative;
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+.experiencefutureytvideo img {
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 1;
+
+}
+
+.experiencefutureytvideo iframe {
+
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  border: 0;
+
+  z-index: 1;
+
+}
+
+.experiencefutureytvideo .play-btn {
+
+  position: relative;
+
+  z-index: 2;
+
+  width: 100px;
+
+  height: 70px;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+  transition: transform 0.3s;
+
+}
+
+.experiencefutureytvideo .play-btn i {
+
+  font-size: 28px;
+
+  color: #E3000F;
+
+}
+
+.experiencefutureytvideo .play-btn:hover {
+
+  transform: scale(1.05);
+
+}
+
+
+
+
+
+/* ================= PROGRAM HIGHLIGHTS ================= */
+.Programhighlight {
+  position: relative;
+  width: 100%;
+  min-height: 746px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.program-highlight-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.program-highlight-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+  /* dark overlay to match design */
+}
+
+.program-highlight-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.program-highlight-content h1 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 60px;
+  color: #ffffff;
+}
+
+.programstats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 40px;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.programstatscard {
+  width: 200px;
+  height: 150px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.programstatscardnumber {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 43px;
+  line-height: 100%;
+  color: #0E4B9F;
+  margin-bottom: 8px;
+}
+
+.programstatscard h5 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  /* scaled from 25px for better fit in 200px box */
+  line-height: 1.2;
+  color: #0E4B9F;
+  text-align: center;
+}
+
+.program-highlight-content p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+
+/* ================= CAMPUS INFRASTRUCTURE ================= */
+.CampusInfrastructure {
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+}
+
+.CampusInfrastructure h2 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  color: #0E4B9F;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.CampusInfrastructureimg {
+  width: 100%;
+  max-width: 1265px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  padding: 11px 0;
+}
+
+.campusinfrastructureimgcard {
+  width: 100%;
+  height: 232px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campusinfrastructureimgcard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.campusinfrastructureimgcard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.campusinfrastructureimgcard .bottomcontent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  background: rgba(14, 75, 159, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: none;
+  z-index: 2;
+}
+
+.campusinfrastructureimgcard .bottomcontent p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+/* ================= MEET OUR MASCOT ================= */
+.MeetOurMascot {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 100%;
+}
+
+.MeetOurMascot h2 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1;
+  text-align: center;
+  max-width: 811px;
+  margin: 0 auto 24px auto;
+}
+
+.MeetOurMascot h2 .green-text {
+  color: #5C8A2F;
+}
+
+.MeetOurMascot h2 .blue-text {
+  color: #0E4B9F;
+}
+
+.MeetOurMascotimg {
+  width: 100%;
+  max-width: 1262px;
+  height: 332px;
+  margin: 0 auto;
+}
+
+.MeetOurMascotimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================= TOP RECRUITERS ================= */
+.Toprecuiter {
+  padding: 40px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+}
+
+.Toprecuiter h2 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  color: #0E4B9F;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.Toprecuiterbothimg {
+  width: 100%;
+  max-width: 1439px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 65px;
+}
+
+.Toprecuiterbothimg img.recruiter-logos {
+  width: 100%;
+  max-width: 1439px;
+  height: 315px;
+  object-fit: contain;
+}
+
+.Toprecuiterbothimg img.academic-building-img {
+  width: 100%;
+  max-width: 1102px;
+  height: 430px;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+/* ================== FOOTER section start ================== */
+.Footer {
+  width: 100%;
+  height: 359px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.Footer .backgroundimg {
+  position: absolute;
+  width: 1827px;
+  height: 359px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  background-image: url(../images/footerimg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ================== FOOTER RESPONSIVENESS ================== */
+@media (max-width: 1200px) {
+  .Footer {
+    height: 220px;
+  }
+
+  .Footer .backgroundimg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transform: none;
+    top: 0;
+    background-size: cover;
+  }
+
+  .Toprecuiterbothimg img.recruiter-logos {
+    height: auto;
+  }
+
+  .Toprecuiterbothimg img.academic-building-img {
+    height: auto;
+  }
+}
