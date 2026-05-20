@@ -1,0 +1,69 @@
+/* =========================
+   UNIVERSAL AQI SECTION
+========================= */
+
+.universalaqi {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+.universalimage {
+  width: 100%;
+  line-height: 0;
+  position: relative;
+}
+
+/* =========================
+   IMAGE COMMON STYLE
+========================= */
+
+.universallaptopimage,
+.universalmobileimage {
+  width: 100%;
+}
+
+.universallaptopimage img,
+.universalmobileimage img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* =========================
+   DEFAULT (DESKTOP/LAPTOP)
+========================= */
+
+.universallaptopimage {
+  display: block;
+}
+
+.universalmobileimage {
+  display: none;
+}
+
+
+/* =========================
+   TABLET + MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+  /* Hide laptop image */
+  .universallaptopimage {
+    display: none;
+  }
+
+  /* Show mobile image */
+  .universalmobileimage {
+    display: block;
+    width: 100%;
+  }
+
+  .universalmobileimage img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
