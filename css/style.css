@@ -17,7 +17,7 @@ html {
 body {
 
   font-family: 'Nunito', sans-serif;
-
+  overflow-x: hidden;
   background: #ffffff;
 
 }
@@ -778,268 +778,7 @@ ul {
   height: 470px;
 }
 
-/* ================= EXPERIENCE FUTURE ================= */
 
-.experience-future {
-  width: 90%;
-  height: 90vh;
-
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
-
-  margin: 0 auto;
-}
-
-.experience-future-heading {
-  width: 100%;
-  max-width: 946px;
-
-  margin: 0 auto 50px;
-
-  text-align: center;
-}
-
-.experience-future-heading h3 {
-  font-family: "Nunito", sans-serif;
-  font-weight: 900;
-
-  font-size: 40px;
-  line-height: 1.2;
-}
-
-.experience-future-heading .green-title {
-  color: #6C9B2E;
-}
-
-.experience-future-heading .blue-title {
-  color: #0E4B9F;
-  margin-top: 10px;
-}
-
-/* ================= VIDEO CONTAINER ================= */
-
-.experiencefutureytvideo {
-  width: min(1100px, 95%);
-  height: 340px;
-
-  margin: 0 auto;
-
-  border-radius: 20px;
-  border: 1px solid #0E4B9F;
-
-  overflow: hidden;
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-}
-
-/* ================= THUMBNAIL ================= */
-
-.video-thumbnail {
-  position: absolute;
-
-  inset: 0;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-  object-position: center;
-
-  z-index: 2;
-
-  cursor: pointer;
-
-  transition: transform 0.4s ease;
-}
-
-.experiencefutureytvideo:hover .video-thumbnail {
-  transform: scale(1.03);
-}
-
-/* ================= IFRAME ================= */
-
-.experiencefutureytvideo iframe {
-  position: absolute;
-
-  inset: 0;
-
-  width: 100%;
-  height: 100%;
-
-  border: 0;
-
-  z-index: 1;
-}
-
-/* ================= PLAY BUTTON ================= */
-
-.experiencefutureytvideo .play-btn {
-  position: relative;
-
-  z-index: 3;
-
-  width: 100px;
-  height: 70px;
-
-  background: rgba(255, 255, 255, 0.95);
-
-  border-radius: 20px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  cursor: pointer;
-
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-
-  transition: all 0.3s ease;
-}
-
-.experiencefutureytvideo .play-btn:hover {
-  transform: scale(1.08);
-}
-
-.experiencefutureytvideo .play-btn i {
-  font-size: 28px;
-
-  color: #E3000F;
-
-  margin-left: 4px;
-}
-
-
-
-
-/* ================= PROGRAM HIGHLIGHTS ================= */
-.Programhighlight {
-  position: relative;
-
-  width: 100%;
-
-  overflow: hidden;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 20px 20px;
-
-  background-image: url(../images/whydownbackimage.webp);
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-/* DARK OVERLAY */
-
-.Programhighlight::before {
-  content: "";
-
-  position: absolute;
-  inset: 0;
-
-  background: rgba(0, 0, 0, 0.45);
-
-  z-index: 1;
-}
-
-.program-highlight-content {
-  position: relative;
-
-  z-index: 2;
-
-  width: 100%;
-  max-width: 1360px;
-
-  margin: 0 auto;
-
-  text-align: center;
-
-  color: #ffffff;
-}
-
-
-.program-highlight-content h1 {
-  font-family: "Nunito", sans-serif;
-  font-weight: 800;
-  font-size: 40px;
-  margin-bottom: 60px;
-  color: #ffffff;
-}
-
-.programstats {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 40px;
-  max-width: 1150px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.programstatscard {
-  width: 200px;
-  height: 150px;
-  background: #FFFFFF;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
-
-.programstatscardnumber {
-  font-family: "Nunito", sans-serif;
-  font-weight: 900;
-  font-size: 43px;
-  line-height: 100%;
-  color: #0E4B9F;
-  margin-bottom: 8px;
-}
-
-.programstatscard h5 {
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  /* scaled from 25px for better fit in 200px box */
-  line-height: 1.2;
-  color: #0E4B9F;
-  text-align: center;
-}
-
-/* .program-highlight-content {
-  position: relative;
-  z-index: 2;
-} */
-
-.program-highlight-content p {
-  font-family: "Nunito", sans-serif;
-
-  font-weight: 700;
-
-  font-size: 20px;
-
-  line-height: 1.7;
-
-  color: #ffffff;
-
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
 
 
 /* ================= CAMPUS INFRASTRUCTURE ================= */
@@ -1116,6 +855,177 @@ ul {
   margin: 0;
   text-align: center;
 }
+
+/* === experience future start==== */
+/* ================= EXPERIENCE FUTURE ================= */
+
+.experience-future {
+  width: 100%;
+  padding: 50px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.experience-future .container {
+  width: 100%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+}
+
+/* ================= HEADING ================= */
+
+.experience-future-heading {
+
+  width: 100%;
+  max-width: 946px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.experience-future-heading h3 {
+
+  font-family: "Nunito", sans-serif;
+
+  font-weight: 900;
+
+  font-size: 40px;
+
+  line-height: 1;
+
+  letter-spacing: 0;
+
+  text-align: center;
+}
+
+/* GREEN TITLE */
+
+.experience-future-heading .green-title {
+  color: #6C9B2E;
+}
+
+/* BLUE TITLE */
+
+.experience-future-heading .blue-title {
+
+  color: #0E4B9F;
+
+  margin-top: 10px;
+}
+
+/* ================= VIDEO BOX ================= */
+
+.experiencefutureytvideo {
+
+  /* FIGMA DESKTOP SIZE */
+  width: 100%;
+  max-width: 1278px;
+
+  aspect-ratio: 1278 / 460;
+
+  margin: 0 auto;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 30px;
+
+  border: 1px solid #0E4B9F;
+
+  background: #000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.14);
+}
+
+/* ================= THUMBNAIL ================= */
+
+.video-thumbnail {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  z-index: 2;
+
+  cursor: pointer;
+
+  transition: transform 0.4s ease;
+}
+
+.experiencefutureytvideo:hover .video-thumbnail {
+  transform: scale(1.03);
+}
+
+/* ================= YOUTUBE IFRAME ================= */
+
+.experiencefutureytvideo iframe {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+
+  z-index: 1;
+}
+
+/* ================= PLAY BUTTON ================= */
+
+.experiencefutureytvideo .play-btn {
+  position: relative;
+
+  z-index: 3;
+
+  width: clamp(70px, 8vw, 110px);
+  height: clamp(50px, 6vw, 78px);
+
+  background: rgba(255, 255, 255, 0.95);
+
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+}
+
+.experiencefutureytvideo .play-btn:hover {
+  transform: scale(1.08);
+}
+
+.experiencefutureytvideo .play-btn i {
+  font-size: clamp(20px, 3vw, 30px);
+
+  color: #E3000F;
+
+  margin-left: 4px;
+}
+
+/* == experience future end */
 
 /* ================= MEET OUR MASCOT ================= */
 .MeetOurMascot {
