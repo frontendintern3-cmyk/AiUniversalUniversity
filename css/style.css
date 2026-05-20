@@ -29,17 +29,11 @@ a {
   text-decoration: none;
 
 }
-
-
-
 ul {
 
   list-style: none;
 
 }
-
-
-
 .container {
 
   width: 100%;
@@ -49,9 +43,6 @@ ul {
   margin: 0 auto;
 
 }
-
-
-
 
 /* ================= HERO SECTION ================= */
 .herosection {
@@ -712,8 +703,6 @@ ul {
 
 }
 
-
-
 /* PARAGRAPH */
 
 .why-overlay-card p {
@@ -731,9 +720,6 @@ ul {
   color: #0E4B9F;
 
 }
-
-
-
 
 /* application process */
 
@@ -788,331 +774,6 @@ ul {
 
 .rightrimage img {
   height: 470px;
-}
-
-
-
-
-
-/* ================= UNIVERSAL AQI SECTION ================= */
-
-.univer {
-
-  width: 100%;
-
-  position: relative;
-
-  margin-top: 50px;
-
-}
-
-
-
-.universalaqi {
-
-  position: relative;
-
-  width: 100%;
-
-  max-width: 1465px;
-
-  height: 645px;
-
-  margin: 0 auto;
-
-  border-radius: 20px;
-
-  overflow: hidden;
-
-  display: flex;
-
-  align-items: center;
-
-}
-
-
-
-.universalaqibackimag {
-
-  position: absolute;
-
-  top: 0;
-
-  left: 0;
-
-  width: 100%;
-
-  height: 100%;
-
-  z-index: 1;
-
-}
-
-
-
-.universalaqibackimag img {
-
-  width: 100%;
-
-  height: 100%;
-
-  object-fit: cover;
-
-}
-
-/* dark gradient overlay to match design and improve contrast */
-.universalaqibackimag::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(3, 12, 48, 0.6) 100%);
-  z-index: 1;
-}
-
-
-
-.universalaqi-content {
-
-  position: relative;
-
-  z-index: 2;
-
-  width: 100%;
-
-  height: 100%;
-
-  padding: 40px 40px 30px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  flex-direction: column;
-
-}
-
-
-
-.headeruniversal {
-
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: flex-start;
-
-  width: 100%;
-
-}
-
-
-
-.headeruniversal h3 {
-
-  font-family: "Nunito", sans-serif;
-
-  font-size: 40px;
-
-  font-weight: 800;
-
-  color: #fff;
-
-  line-height: 1.2;
-
-}
-
-
-
-.aqi-badge {
-
-  background: linear-gradient(90deg, #6C9B2E 0%, #0E4B9F 100%);
-
-  border-radius: 50px;
-
-  padding: 20px 40px;
-
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: flex-end;
-
-}
-
-
-
-.aqi-value {
-
-  font-family: "Nunito", sans-serif;
-
-  font-size: 64px;
-
-  font-weight: 900;
-
-  color: #fff;
-
-  line-height: 1;
-
-}
-
-
-
-.aqi-text {
-
-  font-family: "Nunito", sans-serif;
-
-  font-size: 20px;
-
-  color: #fff;
-
-  font-weight: 500;
-
-  margin-top: 5px;
-
-}
-
-
-
-.sixcard {
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  gap: 42px;
-
-  width: 100%;
-
-  max-width: 1280px;
-
-  margin: 0 auto 10px;
-
-  padding: 0 20px;
-
-}
-
-
-
-.sixcardstate {
-
-  width: 180px;
-
-  height: 160px;
-
-  background: #FFFFFF;
-
-  border-radius: 14px;
-
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: center;
-
-  justify-content: center;
-
-  padding: 12px 10px;
-
-  box-shadow: 0 12px 30px rgba(2, 19, 64, 0.12);
-
-}
-
-.down-left {
-
-  position: absolute;
-
-  left: 40px;
-
-  bottom: 24px;
-
-  color: #fff;
-
-}
-
-.down-left h3 {
-
-  font-family: "Nunito", sans-serif;
-
-  font-size: 42px;
-
-  font-weight: 800;
-
-  margin: 0;
-
-}
-
-
-
-.sixcardstate h5 {
-
-  font-family: "Nunito", sans-serif;
-
-  font-size: 16px;
-
-  color: #222;
-
-  font-weight: 700;
-
-  margin-bottom: 6px;
-
-}
-
-
-
-.sixcardstate span {
-
-  font-family: "Nunito", sans-serif;
-
-  font-size: 40px;
-
-  font-weight: 900;
-
-  color: #E3000F;
-
-}
-
-
-
-.down {
-
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: flex-end;
-
-  width: 100%;
-
-  color: #fff;
-
-}
-
-
-
-.down h3 {
-
-  font-family: "Nunito", sans-serif;
-
-  font-size: 32px;
-
-  font-weight: 800;
-
-}
-
-
-
-.down p {
-
-  font-family: "Nunito", sans-serif;
-
-  font-size: 18px;
-
-  font-weight: 600;
-
 }
 
 /* ================= EXPERIENCE FUTURE ================= */
