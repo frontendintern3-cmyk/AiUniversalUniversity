@@ -404,130 +404,74 @@
 
 
 
-    @media (max-width: 1100px) {
+    /* =========================
+   Tablet Responsive
+========================= */
+    /* =========================
+   TABLET + MOBILE
+========================= */
+    @media (max-width: 1024px) {
 
-
-
-      .application-wrapper {
-
-        flex-direction: column;
-
-
-
-        gap: 50px;
-
+      .Applicaation {
+        padding: 50px 16px;
       }
 
+      .Applicaation h2 {
+        font-size: 34px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      /* MAKE COLUMN */
+      .applicationimage {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+      }
+
+      /* IMAGE WRAPPERS */
+      .leftimage,
+      .rightrimage {
+        width: 100%;
+        max-width: 616px;
+      }
+
+      /* IMAGES */
+      .leftimage img,
+      .rightrimage img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 30px;
+      }
     }
 
-    /* ================= MOBILE ================= */
 
-
-
+    /* =========================
+   MOBILE
+========================= */
     @media (max-width: 767px) {
 
-
-
-      .application-process {
-
-        padding-top: 70px;
-
-        padding-bottom: 70px;
-
+      .Applicaation {
+        padding: 40px 15px;
       }
 
-      /* IMAGE TOP */
-
-
-
-      .application-wrapper {
-
-        flex-direction: column-reverse;
-
-
-
-        gap: 40px;
-
-      }
-
-      .application-right img {
-
-        width: 100%;
-
-      }
-
-      .application-left {
-
-        width: 100%;
-
-
-
-        padding-left: 15px;
-
-        padding-right: 15px;
-
-      }
-
-      /* TITLE */
-
-
-
-      .application-title {
-
-        margin-bottom: 40px;
-
-      }
-
-      .application-title h2 {
-
+      .Applicaation h2 {
         font-size: 28px;
-
-        line-height: 38px;
-
+        margin-bottom: 24px;
       }
 
-      /* BUTTON */
-
-
-
-      .steps-follow {
-
-        width: 220px;
-
-        height: 50px;
-
+      .applicationimage {
+        /* gap: 16px; */
+        flex-direction: column !important;
       }
 
-      .steps-follow h3 {
-
-        font-size: 18px;
-
+      .leftimage img,
+      .rightrimage img {
+        border-radius: 20px;
       }
-
-      /* TIMELINE */
-
-
-
-      .timeline-content {
-
-        width: 135px;
-
-      }
-
-      .timeline-content i {
-
-        font-size: 26px;
-
-      }
-
-      .timeline-content p {
-
-        font-size: 15px;
-
-        line-height: 22px;
-
-      }
-
     }
 
     /* ================= UNIVERSAL AQI MOBILE ================= */
@@ -813,74 +757,16 @@
 
 
     /* ================= CAMPUS INFRASTRUCTURE RESPONSIVENESS ================= */
-    @media (max-width: 1024px) {
-      .Applicaation {
-        padding: 60px 0 72px;
-      }
 
-      .Applicaation h2 {
-        font-size: 34px;
-        margin-bottom: 32px;
-      }
+    /* =========================
+   TABLET
+========================= */
+    @media (max-width: 1024px) and (min-width: 768px) {
 
-      .applicationimage {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-      }
-
-      .leftimage {
-        width: min(100%, 532px);
-        height: auto;
-        aspect-ratio: 532 / 586;
-      }
-
-      .rightrimage {
-        width: min(100%, 700px);
-        height: auto;
-        aspect-ratio: 700 / 520;
-      }
-    }
-
-    @media (max-width: 767px) {
-      .Applicaation {
-        padding: 44px 0 56px;
-      }
-
-      .Applicaation h2 {
-        font-size: 28px;
-        margin-bottom: 24px;
-      }
-
-      .applicationimage {
-        padding: 0 15px;
-        gap: 16px;
-      }
-
-      .leftimage,
-      .rightrimage {
-        width: 100%;
-        border-radius: 14px;
-      }
-
-      .leftimage {
-        aspect-ratio: 532 / 586;
-      }
-
-      .rightrimage {
-        aspect-ratio: 1378 / 808;
-      }
-
-      .rightrimage img {
-        object-position: 50% 28%;
-      }
-    }
-
-    @media (max-width: 1024px) {
       .CampusInfrastructureimg {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 20px;
-        padding: 11px 15px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        padding: 11px 10px;
       }
 
       .campusinfrastructureimgcard {
@@ -890,35 +776,49 @@
       }
     }
 
+
+    /* =========================
+   MOBILE
+========================= */
     @media (max-width: 767px) {
+
       .CampusInfrastructure {
-        padding: 50px 15px;
+        padding: 40px 15px;
       }
 
       .CampusInfrastructure h2 {
         font-size: 28px;
-        margin-bottom: 30px;
+        margin-bottom: 28px;
+        text-align: center;
       }
 
       .CampusInfrastructureimg {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 15px;
-        padding: 11px 0px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 0;
       }
 
       .campusinfrastructureimgcard {
         width: 100%;
-        height: auto;
-        aspect-ratio: 395 / 232;
-        border-radius: 8px;
+        height: 170px;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .campusinfrastructureimgcard img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
 
       .campusinfrastructureimgcard .bottomcontent {
-        height: 38px;
+        height: 40px;
       }
 
       .campusinfrastructureimgcard .bottomcontent p {
-        font-size: 13px;
+        font-size: 14px;
+        line-height: 1.2;
+        text-align: center;
       }
     }
 

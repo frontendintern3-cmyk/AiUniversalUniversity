@@ -66,7 +66,7 @@ ul {
 .lefthero-card {
   position: absolute;
   left: 5%;
-  top: 200px;
+  top: 230px;
   z-index: 2;
   width: 517px;
   display: flex;
@@ -116,10 +116,7 @@ ul {
   right: 5%;
   top: 45px;
   width: 412px;
-  /* background: #0E4B9F; */
   border-radius: 15px;
-  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); */
-  /* border: 1px solid rgba(255, 255, 255, 0.2); */
   letter-spacing: 0.5px;
   z-index: 2;
   display: flex;
@@ -741,7 +738,7 @@ ul {
 .Applicaation {
   width: 100%;
   padding: 72px 0 88px;
-  background: #f7f7f7;
+  background: white;
 }
 
 .Applicaation h2 {
@@ -759,18 +756,16 @@ ul {
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 28px;
 }
 
 .leftimage {
-  flex: 0 0 532px;
   width: 532px;
   height: 586px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 16px 40px rgba(16, 39, 82, 0.14);
 }
 
 .leftimage img,
@@ -782,15 +777,13 @@ ul {
 }
 
 .rightrimage {
-  flex: 1 1 auto;
   min-width: 0;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 16px 40px rgba(16, 39, 82, 0.14);
 }
 
 .rightrimage img {
-  height: 100%;
+  height: 506px;
 }
 
 .application-process {
@@ -806,259 +799,6 @@ ul {
 }
 
 
-
-/* ================= TITLE ================= */
-
-.application-title {
-
-  text-align: center;
-
-  margin-bottom: 60px;
-
-}
-
-
-
-.application-title h2 {
-
-  font-family: 'Nunito', sans-serif;
-
-  font-weight: 900;
-
-  font-size: 40px;
-
-  line-height: 100%;
-
-  color: #0E4B9F;
-
-}
-
-
-
-/* ================= WRAPPER ================= */
-
-.application-wrapper {
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  gap: 70px;
-
-}
-
-
-
-/* ================= LEFT SIDE ================= */
-
-.application-left {
-
-  width: 420px;
-
-}
-
-
-
-/* ================= STEPS BUTTON ================= */
-
-.steps-follow {
-
-  width: 245px;
-
-  height: 54px;
-
-  background: #001F63;
-
-  border-radius: 6px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  margin: 0 auto 35px;
-
-}
-
-
-
-.steps-follow h3 {
-
-  font-family: 'Nunito', sans-serif;
-
-  font-weight: 700;
-
-  font-size: 22px;
-
-  line-height: 100%;
-
-  color: #ffffff;
-
-}
-
-
-
-/* ================= TIMELINE ================= */
-
-.application-timeline {
-
-  width: 100%;
-
-  position: relative;
-
-  padding-bottom: 10px;
-
-}
-
-
-
-/* CENTER LINE */
-
-.application-timeline::before {
-
-  content: '';
-
-  width: 4px;
-
-  height: 100%;
-
-  background: #001F63;
-
-  position: absolute;
-
-  left: 50%;
-
-  top: 0;
-
-  transform: translateX(-50%);
-
-}
-
-
-
-/* STEP */
-
-.timeline-step {
-
-  position: relative;
-
-  margin-bottom: 48px;
-
-}
-
-
-
-/* DOT */
-
-.timeline-dot {
-
-  width: 18px;
-
-  height: 18px;
-
-  background: #001F63;
-
-  border-radius: 50%;
-
-  position: absolute;
-
-  left: 50%;
-
-  top: 12px;
-
-  transform: translateX(-50%);
-
-  z-index: 2;
-
-}
-
-
-
-/* CONTENT */
-
-.timeline-content {
-
-  width: 175px;
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 14px;
-
-}
-
-
-
-/* RIGHT CONTENT */
-
-.right-step .timeline-content {
-
-  margin-left: auto;
-
-}
-
-
-
-/* LEFT CONTENT */
-
-.left-step .timeline-content {
-
-  text-align: right;
-
-}
-
-
-
-/* ICON */
-
-.timeline-content i {
-
-  font-size: 34px;
-
-  color: #4A4A4A;
-
-  flex-shrink: 0;
-
-}
-
-
-
-/* TEXT */
-
-.timeline-content p {
-
-  font-family: 'Nunito', sans-serif;
-
-  font-weight: 700;
-
-  font-size: 18px;
-
-  line-height: 24px;
-
-  color: #4A4A4A;
-
-}
-
-
-
-/* ================= RIGHT IMAGE ================= */
-
-.application-right img {
-
-  width: 650px;
-
-
-  max-width: 100%;
-
-  display: block;
-
-  border-radius: 20px;
-
-}
 
 
 
