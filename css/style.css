@@ -1026,7 +1026,177 @@ ul {
 }
 
 /* == experience future end */
+/* ========================================================= */
+/* ================= PROGRAM HIGHLIGHTS ==================== */
+/* ========================================================= */
 
+.Programhighlight {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 90px 20px;
+
+  background-image: url(../images/whydownbackimage.webp);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ================= DARK OVERLAY ================= */
+
+.Programhighlight::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.4) 66.58%,
+      rgba(0, 0, 0, 0.85) 93.96%);
+
+  z-index: 1;
+}
+
+/* ================= CONTENT ================= */
+
+.program-highlight-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+/* ================= TITLE ================= */
+
+.program-highlight-content h1 {
+  font-family: "Nunito", sans-serif;
+
+  font-weight: 800;
+
+  font-size: 40px;
+
+  line-height: 1;
+
+  color: #ffffff;
+
+  margin-bottom: 55px;
+}
+
+/* ========================================================= */
+/* ================= STATS GRID ============================ */
+/* ========================================================= */
+
+.programstats {
+
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  justify-items: center;
+
+  gap: 24px;
+
+  max-width: 1150px;
+
+  margin: 0 auto 45px;
+}
+
+/* ================= CARD ================= */
+
+.programstatscard {
+
+  width: 200px;
+  height: 150px;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+  transition: transform 0.3s ease;
+}
+
+.programstatscard:hover {
+  transform: translateY(-4px);
+}
+
+/* ================= NUMBER ================= */
+
+.programstatscardnumber {
+
+  font-family: "Nunito", sans-serif;
+
+  font-weight: 900;
+
+  font-size: 43px;
+
+  line-height: 1;
+
+  color: #0E4B9F;
+
+  margin-bottom: 8px;
+}
+
+/* ================= CARD TEXT ================= */
+
+.programstatscard h5 {
+
+  font-family: "Nunito", sans-serif;
+
+  font-weight: 600;
+
+  font-size: 18px;
+
+  line-height: 1.2;
+
+  color: #0E4B9F;
+
+  text-align: center;
+}
+
+/* ================= BOTTOM TEXT ================= */
+
+.program-highlight-content p {
+
+  font-family: "Nunito", sans-serif;
+
+  font-weight: 700;
+
+  font-size: 20px;
+
+  line-height: 1.6;
+
+  color: #ffffff;
+
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+}
+
+/* ===program highlight end== */
 /* ================= MEET OUR MASCOT ================= */
 .MeetOurMascot {
   padding: 40px 20px;

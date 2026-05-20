@@ -693,6 +693,262 @@
 }
 
 /* experience future end */
+/* ================program highlighstart ======== */
+/* ========================================================= */
+/* ================= BIG SCREEN ============================ */
+/* ========================================================= */
+
+@media (min-width: 1400px) {
+
+  .Programhighlight {
+    padding: 120px 40px;
+  }
+
+  .program-highlight-content h1 {
+    font-size: 56px;
+  }
+
+  .programstats {
+
+    max-width: 1350px;
+
+    gap: 28px;
+  }
+
+  .programstatscard {
+
+    width: 220px;
+    height: 170px;
+
+    border-radius: 24px;
+  }
+
+  .programstatscardnumber {
+    font-size: 56px;
+  }
+
+  .programstatscard h5 {
+    font-size: 22px;
+  }
+
+  .program-highlight-content p {
+    font-size: 28px;
+  }
+}
+
+/* ========================================================= */
+/* ================= LAPTOP ================================ */
+/* ========================================================= */
+
+@media (max-width: 1200px) {
+
+  .Programhighlight {
+    padding: 80px 20px;
+  }
+
+  .program-highlight-content h1 {
+    font-size: 34px;
+  }
+
+  .programstats {
+
+    grid-template-columns: repeat(4, 1fr);
+
+    max-width: 900px;
+
+    gap: 20px;
+  }
+
+  .programstatscard {
+
+    width: 180px;
+    height: 135px;
+
+    border-radius: 16px;
+  }
+
+  .programstatscardnumber {
+    font-size: 42px;
+  }
+
+  .programstatscard h5 {
+    font-size: 18px;
+  }
+
+  /* LAST 2 CARDS CENTER */
+
+  .programstatscard:nth-last-child(2) {
+    grid-column: 2 / 3;
+  }
+
+  .programstatscard:last-child {
+    grid-column: 3 / 4;
+  }
+}
+
+/* ========================================================= */
+/* ================= TABLET ================================ */
+/* ========================================================= */
+
+@media (max-width: 991px) {
+
+  .Programhighlight {
+    padding: 70px 18px;
+  }
+
+  .program-highlight-content h1 {
+
+    font-size: 32px;
+
+    margin-bottom: 40px;
+  }
+
+  .programstats {
+
+    grid-template-columns: repeat(3, 1fr);
+
+    max-width: 700px;
+
+    gap: 18px;
+  }
+
+  .programstatscard {
+
+    width: 170px;
+    height: 130px;
+
+    border-radius: 14px;
+  }
+
+  .programstatscardnumber {
+    font-size: 38px;
+  }
+
+  .programstatscard h5 {
+    font-size: 18px;
+  }
+
+  .programstatscard:nth-last-child(2),
+  .programstatscard:last-child {
+    grid-column: auto;
+  }
+
+  .program-highlight-content p {
+
+    font-size: 18px;
+
+    line-height: 1.5;
+  }
+}
+
+/* ========================================================= */
+/* ================= MOBILE ================================ */
+/* ========================================================= */
+
+@media (max-width: 767px) {
+
+  .Programhighlight {
+
+    padding: 55px 14px;
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .program-highlight-content h1 {
+
+    font-size: 25px;
+
+    margin-bottom: 28px;
+  }
+
+  .programstats {
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 14px;
+
+    max-width: 350px;
+
+    margin-bottom: 30px;
+  }
+
+  /* LAST CARD CENTER */
+
+  /* .programstatscard:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+  } */
+
+  .programstatscard {
+
+    width: 161px;
+    height: 122px;
+
+    border-radius: 10px;
+
+    padding: 10px;
+  }
+
+  .programstatscardnumber {
+
+    font-size: 40px;
+
+    line-height: 1;
+  }
+
+  .programstatscard h5 {
+
+    font-size: 20px;
+
+    line-height: 1.1;
+  }
+
+  .program-highlight-content p {
+
+    font-size: 16px;
+
+    line-height: 1.5;
+  }
+}
+
+/* ========================================================= */
+/* ================= SMALL MOBILE ========================== */
+/* ========================================================= */
+
+@media (max-width: 480px) {
+
+  .Programhighlight {
+    padding: 50px 10px;
+  }
+
+  .programstats {
+
+    gap: 12px;
+
+    max-width: 100%;
+  }
+
+  .programstatscard {
+
+    width: 148px;
+    height: 115px;
+  }
+
+  .programstatscardnumber {
+    font-size: 34px;
+  }
+
+  .programstatscard h5 {
+    font-size: 17px;
+  }
+
+  .program-highlight-content p {
+    font-size: 14px;
+  }
+}
+
+/* ==================program highlight end ====== */
 /* Meet Our Mascot */
 @media (max-width: 767px) {
   .MeetOurMascot {
