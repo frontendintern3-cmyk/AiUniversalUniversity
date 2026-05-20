@@ -72,7 +72,8 @@ main {
 .footer-logo img {
   width: 308px;
   height: 58px;
-  object-fit: contain;
+  object-fit: cover;
+  padding-top: 14px;
 }
 
 /* ================= CENTER ================= */
@@ -89,7 +90,7 @@ main {
 
   color: #ffffff;
 
-  margin-bottom: 12px;
+  margin-bottom: 7px;
 }
 
 /* ================= CALL BOX ================= */
@@ -615,7 +616,7 @@ main {
 
   /* FIXED BAR */
   .fixed-footer-bar {
-    padding: 14px 12px;
+    padding: 8px 12px;
     gap: 12px;
   }
 
@@ -626,12 +627,12 @@ main {
   }
 
   .fixed-footer-right {
-    gap: 10px;
+    gap: 20px;
   }
 
   .apply-btn {
     width: 135px;
-    height: 40px;
+    height: 30px;
 
     font-size: 15px;
     font-weight: 800;
@@ -640,7 +641,7 @@ main {
   .back-top {
     width: 38px;
     height: 38px;
-
+    padding-right: 5px;
     font-size: 14px;
   }
 }
@@ -706,12 +707,12 @@ main {
     align-items: center;
     justify-content: center;
 
-    gap: 10px;
+    gap: 20px;
   }
 
   .apply-btn {
     width: 150px;
-    height: 50px;
+    height: 30px;
 
     border-radius: 50px;
 
@@ -749,8 +750,9 @@ main {
     height: 42px;
 
     flex-shrink: 0;
-
+    padding-left: 5px;
     font-size: 15px;
+    margin-left: 15px;
   }
 
   /* =========================

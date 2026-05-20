@@ -1,9 +1,10 @@
 /* =====================================================
    UNIVERSAL AQI SECTION
+   FIXED RESPONSIVE HEIGHT
 ===================================================== */
 
 /* =========================
-   BASE / MOBILE FIRST
+   BASE
 ========================= */
 
 .universalaqi {
@@ -36,52 +37,78 @@
 .universallaptopimage img,
 .universalmobileimage img {
   width: 100%;
-  height: auto;
   display: block;
   object-fit: cover;
   object-position: center;
 }
 
-/* =========================
-   DEFAULT MOBILE VIEW
-========================= */
+/* =====================================================
+   MOBILE DEFAULT
+===================================================== */
 
-/* Mobile image visible by default */
 .universalmobileimage {
   display: block;
 }
 
-/* Laptop/Desktop image hidden on mobile */
 .universallaptopimage {
   display: none;
 }
 
+/* IMPORTANT:
+   Restrict mobile height
+   Remove extra bottom white space
+*/
+
+.universalmobileimage img {
+  width: 100%;
+  height: auto;
+  max-height: 720px;
+  object-fit: cover;
+}
+
 /* =========================
-   SMALL MOBILE DEVICES
-   iPhone SE / Fold Phones
+   SMALL MOBILE
 ========================= */
 
 @media (max-width: 480px) {
 
-  .universalaqi {
-    width: 100%;
-  }
-
   .universalmobileimage img {
     width: 100%;
     height: auto;
+
+    /* FIX EXTRA SPACE */
+    max-height: 620px;
+
     object-fit: cover;
+    object-position: top center;
   }
 }
 
 /* =========================
-   TABLET DEVICES
-   iPads / Landscape Phones
+   LARGE MOBILE
 ========================= */
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .universalmobileimage img {
+    width: 100%;
+    height: auto;
+
+    /* CONTROL HEIGHT */
+    max-height: 760px;
+
+    object-fit: cover;
+    object-position: center top;
+  }
+}
+
+/* =====================================================
+   TABLET + LAPTOP + DESKTOP
+===================================================== */
 
 @media (min-width: 768px) {
 
-  /* Show laptop/tablet image */
+  /* Show desktop image */
   .universallaptopimage {
     display: block;
   }
@@ -95,18 +122,15 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+    object-position: center;
   }
 }
 
 /* =========================
-   LARGE DESKTOPS
+   LARGE DESKTOP
 ========================= */
 
 @media (min-width: 1440px) {
-
-  .universalaqi {
-    width: 100%;
-  }
 
   .universallaptopimage img {
     width: 100%;
