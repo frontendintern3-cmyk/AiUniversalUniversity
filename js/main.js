@@ -13,3 +13,21 @@ menuBtn.addEventListener("click", () => {
     menuIcon.classList.add("fa-xmark");
   }
 });
+const playBtn = document.getElementById("playBtn");
+const thumbnail = document.querySelector(".video-thumbnail");
+const iframe = document.getElementById("youtubeVideo");
+
+playBtn.addEventListener("click", playVideo);
+thumbnail.addEventListener("click", playVideo);
+
+function playVideo() {
+
+  // Hide thumbnail
+  thumbnail.style.display = "none";
+
+  // Hide play button
+  playBtn.style.display = "none";
+
+  // Play youtube video
+  iframe.src += "&autoplay=1";
+}

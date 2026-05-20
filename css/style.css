@@ -1121,9 +1121,7 @@ ul {
   flex-direction: column;
 
   justify-content: center;
-  /* vertical center */
   align-items: center;
-  /* horizontal center */
 
   text-align: center;
 
@@ -1131,43 +1129,32 @@ ul {
 }
 
 .experience-future-heading {
-
   width: 100%;
-
   max-width: 946px;
 
   margin: 0 auto 50px;
 
   text-align: center;
-
 }
 
 .experience-future-heading h3 {
-
   font-family: "Nunito", sans-serif;
-
   font-weight: 900;
 
   font-size: 40px;
-
   line-height: 1.2;
-  /* slightly relaxed from 100% for readability */
-
 }
 
 .experience-future-heading .green-title {
-
   color: #6C9B2E;
-
 }
 
 .experience-future-heading .blue-title {
-
   color: #0E4B9F;
-
   margin-top: 10px;
-
 }
+
+/* ================= VIDEO CONTAINER ================= */
 
 .experiencefutureytvideo {
   width: min(1100px, 95%);
@@ -1180,83 +1167,89 @@ ul {
 
   overflow: hidden;
   position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
-.experiencefutureytvideo img {
+/* ================= THUMBNAIL ================= */
 
-  position: absolute;
-
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-  background-size: cover;
-
-  z-index: 1;
-
-}
-
-.experiencefutureytvideo iframe {
-
+.video-thumbnail {
   position: absolute;
 
   inset: 0;
 
   width: 100%;
+  height: 100%;
 
+  object-fit: cover;
+  object-position: center;
+
+  z-index: 2;
+
+  cursor: pointer;
+
+  transition: transform 0.4s ease;
+}
+
+.experiencefutureytvideo:hover .video-thumbnail {
+  transform: scale(1.03);
+}
+
+/* ================= IFRAME ================= */
+
+.experiencefutureytvideo iframe {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
   height: 100%;
 
   border: 0;
 
   z-index: 1;
-
 }
 
-.experiencefutureytvideo .play-btn {
+/* ================= PLAY BUTTON ================= */
 
+.experiencefutureytvideo .play-btn {
   position: relative;
 
-  z-index: 2;
+  z-index: 3;
 
   width: 100px;
-
   height: 70px;
 
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.95);
 
   border-radius: 20px;
 
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
   cursor: pointer;
 
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 
-  transition: transform 0.3s;
+  transition: all 0.3s ease;
+}
 
+.experiencefutureytvideo .play-btn:hover {
+  transform: scale(1.08);
 }
 
 .experiencefutureytvideo .play-btn i {
-
   font-size: 28px;
 
   color: #E3000F;
 
+  margin-left: 4px;
 }
-
-.experiencefutureytvideo .play-btn:hover {
-
-  transform: scale(1.05);
-
-}
-
 
 
 
