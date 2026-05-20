@@ -653,20 +653,6 @@
 
     /* ================= EXPERIENCE FUTURE MOBILE ================= */
 
-    @media (max-width: 1300px) {
-
-      .experiencefutureytvideo {
-
-        width: 90%;
-
-        height: 450px;
-
-      }
-
-    }
-
-
-
     @media (max-width: 767px) {
 
       .experience-future {
@@ -695,13 +681,13 @@
 
       .experiencefutureytvideo {
 
-        width: 100%;
+        width: calc(100% - 88px);
 
         max-width: 612px;
 
         height: 279px;
 
-        border-radius: 20px;
+        border-radius: 30px;
 
       }
 
