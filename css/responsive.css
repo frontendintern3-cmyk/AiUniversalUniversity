@@ -672,9 +672,13 @@
   .why-top-content {
 
     width: 262px;
+    padding-top: 60px;
 
   }
 
+  .why-top-stat {
+    height: 100px;
+  }
 
 
 

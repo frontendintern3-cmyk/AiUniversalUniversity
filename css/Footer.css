@@ -266,7 +266,7 @@ main {
 /* ================= APPLY BUTTON ================= */
 
 .apply-btn {
-  width: 130px;
+  width: 140px;
   height: 30px;
   border-radius: 40px;
   background: #ffffff;
@@ -491,11 +491,15 @@ main {
 
     text-align: center;
 
-    padding: 16px;
+    padding: 7px;
 
     gap: 14px;
 
     height: auto;
+  }
+
+  .fixed-footer-left p {
+    display: none;
   }
 
   .fixed-footer-left,
@@ -596,6 +600,11 @@ main {
     line-height: 1.4;
   }
 
+  .fixed-footer-rightcenterpara p {
+    font-size: 11px;
+    color: #ffffff
+  }
+
   /* LINE */
   .footer-line {
     margin: 22px auto 18px;
@@ -666,9 +675,9 @@ main {
 
   .fixed-footer-bar {
     width: 100%;
-    min-height: 144px;
+    /* min-height: 144px; */
 
-    padding: 6px 10px;
+    padding: 4px 10px;
 
     display: flex;
     flex-direction: column;
@@ -695,7 +704,7 @@ main {
     max-width: 340px;
 
     font-family: "Nunito", sans-serif;
-    font-size: 13px;
+    font-size: 9px;
     line-height: 1.25;
     font-weight: 800;
 
@@ -717,17 +726,16 @@ main {
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
-    gap: 12px;
+    gap: 22px;
   }
 
   .apply-btn {
-    width: 132px;
+    width: 100px;
     height: 32px;
-
+    padding-bottom: 2px;
     border-radius: 50px;
-
     font-size: 14px;
     font-weight: 800;
   }
