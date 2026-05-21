@@ -801,7 +801,7 @@
   }
 
   .rightrimage {
-    width: auto;
+    display: none;
 
   }
 
@@ -809,6 +809,7 @@
   .rightrimage img {
     border-radius: 20px;
   }
+
 }
 
 /* ================= UNIVERSAL AQI MOBILE ================= */
