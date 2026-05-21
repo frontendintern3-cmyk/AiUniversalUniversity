@@ -263,6 +263,10 @@ main {
   gap: 14px;
 }
 
+.fixed-footer-rightcenterpara {
+  display: none;
+}
+
 /* ================= APPLY BUTTON ================= */
 
 .apply-btn {
@@ -601,6 +605,7 @@ main {
   }
 
   .fixed-footer-rightcenterpara p {
+    display: block;
     font-size: 11px;
     color: #ffffff
   }
@@ -667,6 +672,10 @@ main {
   }
 }
 
+.fixed-footer-rightcenterpara p {
+  display: none;
+}
+
 /* =========================
    MOBILE FIXED FOOTER BAR
 ========================= */
@@ -693,6 +702,16 @@ main {
     border-top-right-radius: 20px;
 
     background: linear-gradient(90deg, #72973F 0%, #144F9C 100%);
+  }
+
+  .fixed-footer-rightcenterpara {
+    display: flex;
+    flex: 1 1 auto;
+    min-width: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   /* =========================
@@ -728,7 +747,7 @@ main {
     align-items: center;
     justify-content: space-between;
 
-    gap: 22px;
+    gap: 10px;
   }
 
   .apply-btn {
@@ -772,7 +791,15 @@ main {
     flex-shrink: 0;
     padding-left: 4px;
     font-size: 13px;
-    margin-left: 8px;
+    margin-left: 0;
+  }
+
+  .fixed-footer-rightcenterpara p {
+    display: block;
+    margin: 0;
+    font-size: 11px;
+    line-height: 1.25;
+    color: #ffffff;
   }
 
   /* =========================
