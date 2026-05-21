@@ -666,9 +666,9 @@ main {
 
   .fixed-footer-bar {
     width: 100%;
-    min-height: 170px;
+    min-height: 144px;
 
-    padding: 7px 12px;
+    padding: 6px 10px;
 
     display: flex;
     flex-direction: column;
@@ -676,12 +676,12 @@ main {
     align-items: center;
     justify-content: center;
 
-    gap: 18px;
+    gap: 10px;
 
     text-align: center;
 
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 
     background: linear-gradient(90deg, #72973F 0%, #144F9C 100%);
   }
@@ -692,11 +692,11 @@ main {
 
   .fixed-footer-center {
     width: 100%;
-    max-width: 377px;
+    max-width: 340px;
 
     font-family: "Nunito", sans-serif;
-    font-size: 15px;
-    line-height: 1;
+    font-size: 13px;
+    line-height: 1.25;
     font-weight: 800;
 
     color: #ffffff;
@@ -719,17 +719,17 @@ main {
     align-items: center;
     justify-content: center;
 
-    gap: 20px;
+    gap: 12px;
   }
 
   .apply-btn {
-    width: 150px;
-    height: 30px;
+    width: 132px;
+    height: 32px;
 
     border-radius: 50px;
 
-    font-size: 18px;
-    font-weight: 900;
+    font-size: 14px;
+    font-weight: 800;
   }
 
   /* =========================
@@ -738,10 +738,10 @@ main {
 
   .fixed-footer-left {
     width: 100%;
-    max-width: 377px;
+    max-width: 340px;
 
-    font-size: 13px;
-    line-height: 1.5;
+    font-size: 11px;
+    line-height: 1.35;
     font-weight: 700;
 
     text-align: center;
@@ -758,13 +758,13 @@ main {
   ========================= */
 
   .back-top {
-    width: 42px;
-    height: 42px;
+    width: 34px;
+    height: 34px;
 
     flex-shrink: 0;
-    padding-left: 5px;
-    font-size: 15px;
-    margin-left: 15px;
+    padding-left: 4px;
+    font-size: 13px;
+    margin-left: 8px;
   }
 
   /* =========================
@@ -772,6 +772,6 @@ main {
   ========================= */
 
   body {
-    padding-bottom: 190px;
+    padding-bottom: 156px;
   }
 }
