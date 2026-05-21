@@ -1143,6 +1143,13 @@ ul {
   transition: transform 0.3s ease;
 }
 
+.percent {
+  color: #0e4b9f;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: 'Nunito', sans-serif;
+}
+
 .programstatscard:hover {
   transform: translateY(-4px);
 }
