@@ -188,7 +188,7 @@
 
   .herosection {
 
-    background-image: url(../images/heromobileview.webp) !important;
+    background-image: url(../images/350hbanner.webp) !important;
 
     background-size: cover;
 
@@ -205,27 +205,34 @@
 
 
 @media (max-width: 480px) {
+  .herosection {
+    position: relative;
+    background-image: url(../images/350hbanner.webp) !important;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 350px;
+    height: auto;
+  }
 
   .lefthero-card {
-
     left: 18px;
-
     bottom: 95px;
-
     width: calc(100% - 36px);
-
     max-width: 280px;
   }
 }
 
 @media (max-width: 390px) {
   .herosection {
+    /* position: relative;
+    min-height: 390px; */
     position: relative;
-    min-height: 390px;
-    height: auto;
+    background-image: url(../images/350hbanner.webp) !important;
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
+    height: auto;
   }
 
   .herosection::before {
@@ -430,6 +437,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 12px;
   }
 
   .formdivmobile form {
