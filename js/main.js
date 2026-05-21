@@ -46,3 +46,19 @@ function playVideo() {
   // Play youtube video
   iframe.src += "&autoplay=1";
 }
+
+const whyTopWrapper = document.getElementById("whyTopWrapper");
+const whyNextBtn = document.querySelector(".why-next");
+const whyPrevBtn = document.querySelector(".why-prev");
+
+if (whyTopWrapper && whyNextBtn && whyPrevBtn) {
+  const getStep = () => whyTopWrapper.clientWidth;
+
+  whyNextBtn.addEventListener("click", () => {
+    whyTopWrapper.scrollBy({ left: getStep(), behavior: "smooth" });
+  });
+
+  whyPrevBtn.addEventListener("click", () => {
+    whyTopWrapper.scrollBy({ left: -getStep(), behavior: "smooth" });
+  });
+}
