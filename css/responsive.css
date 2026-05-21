@@ -184,9 +184,25 @@
   }
 }
 
+@media (max-width: 767px) {
+
+  .herosection {
+
+    background-image: url(../images/heromobileview.webp) !important;
+
+    background-size: cover;
+
+    background-position: center top;
+
+    background-repeat: no-repeat;
+  }
+}
+
+
 /* ========================================================= */
 /* ================= SMALL MOBILE ========================== */
 /* ========================================================= */
+
 
 @media (max-width: 480px) {
 
@@ -202,19 +218,106 @@
   }
 }
 
-@media (max-width: 767px) {
-
+@media (max-width: 390px) {
   .herosection {
-
-    background-image: url(../images/heromobileview.webp) !important;
-
+    position: relative;
+    min-height: 390px;
+    height: auto;
     background-size: cover;
-
     background-position: center top;
-
     background-repeat: no-repeat;
   }
+
+  .herosection::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0.32) 0%,
+        rgba(0, 0, 0, 0.12) 45%,
+        rgba(0, 0, 0, 0.42) 100%);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .lefthero-card,
+  .ritherow-card,
+  .bottomcontent {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .lefthero-card {
+    left: 16px;
+    bottom: 44px;
+    width: calc(100% - 32px);
+    max-width: 285px;
+  }
+
+  .leftimgcard {
+    padding: 5px 8px;
+    min-height: 72px;
+    height: auto;
+    margin-top: 10px;
+    gap: 4px;
+  }
+
+  .cardimg {
+    width: 72px;
+    height: 46px;
+  }
+
+  .bottomcontent {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 4px 8px;
+    min-height: 30px;
+    height: auto;
+    max-height: none;
+  }
+
+  .bottomcontent p {
+    font-size: 10px;
+    line-height: 1.2;
+    margin: 0;
+    height: auto;
+    text-align: center;
+  }
 }
+
+@media (max-width: 361px) {
+  .herosection {
+    min-height: 365px;
+  }
+
+  .lefthero-card {
+    left: 14px;
+    bottom: 38px;
+    width: calc(100% - 28px);
+    max-width: 270px;
+  }
+
+  .leftimgcard {
+    padding: 4px 6px;
+    min-height: 68px;
+  }
+
+  .cardimg {
+    width: 68px;
+    height: 44px;
+  }
+
+  .bottomcontent {
+    padding: 3px 6px;
+    min-height: 28px;
+  }
+
+  .bottomcontent p {
+    font-size: 9px;
+  }
+}
+
 
 @media (max-width: 312px) {
   .herosection {
@@ -299,10 +402,69 @@
 
 }
 
-/* ================= MOBILE ================= */
+/* right card hide when screen size be reduce */
+@media (max-width: 1024px) {
+  .ritherow-card {
+    display: none;
+  }
+}
+
+/* right side form */
 
 
+/* ================= MOBILE about section ================= */
 
+/* for mobile view*/
+/* ================= FORM DIV MOBILE ================= */
+.formdivmobile {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .formdivmobile {
+    display: block;
+    width: 100%;
+    min-height: 500px;
+    background-image: linear-gradient(273deg, #6DA93A91 22%, #336DACC9 100%);
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formdivmobile form {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .formdivmobile {
+    min-height: 400px;
+    padding: 25px 15px;
+  }
+
+  .formdivmobile form {
+    max-width: 100%;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .formdivmobile {
+    min-height: 350px;
+    padding: 20px 12px;
+  }
+
+  .formdivmobile form {
+    gap: 10px;
+  }
+}
+
+/* for about section */
 @media (max-width: 767px) {
 
 
